@@ -1,0 +1,20 @@
+https://notepad.pw/workshop-kmilt
+
+
+SELECT customer_Id,CONCAT(first_name,' ',last_name) as full_name,address,tel,email FROM customer
+
+DELETE FROM customer WHERE customer_Id = ?
+
+INSERT INTO customer  (first_name ,last_name,address,tel , email) VALUES (? ,? ,? ,? ,?)
+
+UPDATE customer  SET
+first_name  = ? ,
+last_name = ? ,
+address = ? ,
+tel= ?  ,
+email = ?
+WHERE customer_Id = ?
+
+
+
+http://localhost:8080/{??????}/api/customer
